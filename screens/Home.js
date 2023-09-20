@@ -7,10 +7,11 @@ export default function Home({ navigation }) {
     return (
         <ScrollView>
             <View style={styles.container}>
-                <Text>Welcome!</Text>
+                <Text variant="displaySmall">Welcome! </Text>
+                <Text variant="headlineSmall">This is the homepage </Text>
                 <StatusBar style="auto" />
-                <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
-                    Press me
+                <Button mode="contained" onPress={() => console.log('Pressed')}>
+                    Go to About page
                 </Button>
 
                 <Card>
@@ -37,4 +38,5 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+
 });
